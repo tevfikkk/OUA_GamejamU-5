@@ -18,7 +18,6 @@ public class SpawnPlatform : MonoBehaviour
         }
     }
 
-
     public void Spawn()
     {
         Instantiate(platformPrefab, transform.position, Quaternion.identity, transform.parent);
