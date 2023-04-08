@@ -14,15 +14,13 @@ public class Teacher : MonoBehaviour
     {
         IdleState,
         ThrowingState, // Throwing scholl stuff at the student
-        CollectingState // Collecting the scholl stuff
     }
 
     [Header("Teacher Object Settings")]
-    [SerializeField] private GameObject homeworkPrefabVar;
     [SerializeField] private TeacherState state = TeacherState.IdleState;
     [SerializeField] private float throwingSpeed = 2.5f;
     [SerializeField] private float delayBetweenThrows = 1f;
-    [SerializeField] private Transform studentPoint; // 
+    [SerializeField] private Transform studentPoint;
 
 
     private void Start()
@@ -39,9 +37,6 @@ public class Teacher : MonoBehaviour
                 break;
             case TeacherState.ThrowingState:
                 ThrowingState();
-                break;
-            case TeacherState.CollectingState:
-                CollectingState();
                 break;
             default:
                 break;
@@ -70,17 +65,8 @@ public class Teacher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SetState(TeacherState.CollectingState);
-            Debug.Log("Teacher is throwing school stuff at the student.");
-        }
-    }
-
-    private void CollectingState()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
             SetState(TeacherState.IdleState);
-            Debug.Log("Teacher is collecting the school stuff.");
+            StopCoroutine(ThrowingHomeWorks(studentPoint.position));
         }
     }
 
