@@ -21,14 +21,17 @@ public class HomeworkSpawnManager : MonoBehaviour
     private void Start()
     {
         spawnPos = transform.position; // Homeworkun spawn konumunu kaydet
-
-        if (spawnHomeworkCoroutine == null)
-            spawnHomeworkCoroutine = StartCoroutine(SpawnHomework()); // Homeworkun spawn fonksiyonunu calistir (Coroutine
     }
 
     private void Update()
     {
         StartCoroutine(MoveSpawnManager()); // Homeworkun spawn konumunu hareket ettir
+
+        if (Input.GetKeyDown(KeyCode.Alpha1)) // 1 tusuna basildiginda homework spawn fonksiyonunu calistir
+        {
+            if (spawnHomeworkCoroutine == null)
+                spawnHomeworkCoroutine = StartCoroutine(SpawnHomework()); // Homeworkun spawn fonksiyonunu calistir (Coroutine
+        }
     }
 
     private IEnumerator SpawnHomework()

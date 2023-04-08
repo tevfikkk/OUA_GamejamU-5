@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homeworkPrefab: {fileID: 6803283734897967443, guid: 12479f8ec37fdd0409ba94e0ea15ed44, type: 3}
-  spawnSpeedDelay: 0.5
+  spawnSpeedDelay: 0.9
   destoyHomeworkDelay: 5
   movingSpeed: 0.75
   spawnDistance: 9
