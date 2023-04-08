@@ -12,10 +12,10 @@ public class SpawnPlatform : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Spawn();
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     Spawn();
+        // }
     }
 
     public void Spawn()

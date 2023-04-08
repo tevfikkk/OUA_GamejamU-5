@@ -9,11 +9,14 @@ public class SceneManagement : Singleton<SceneManagement>
     {
         switch (other.tag)
         {
-            case "Level1":
+            case "Street":
                 SceneManager.LoadScene(0);
                 break;
-            case "Level2":
+            case "Level1":
                 SceneManager.LoadScene(1);
+                break;
+            case "Level2":
+                SceneManager.LoadScene(2);
                 break;
             default:
                 break;
