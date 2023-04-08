@@ -20,7 +20,6 @@ public class Teacher : MonoBehaviour, ITeacher
     [SerializeField] private TeacherState state = TeacherState.IdleState;
     [SerializeField] private float throwingSpeed = 2.5f;
     [SerializeField] private float delayBetweenThrows = 1f;
-    [SerializeField] private Transform studentPoint;
 
     private void Start()
     {
@@ -59,7 +58,7 @@ public class Teacher : MonoBehaviour, ITeacher
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SetState(TeacherState.ThrowingState);
-            StartCoroutine(ThrowingHomeWorks(studentPoint.position));
+            StartCoroutine(ThrowingHomeWorks());
         }
     }
 
@@ -71,23 +70,22 @@ public class Teacher : MonoBehaviour, ITeacher
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SetState(TeacherState.IdleState);
-            StopCoroutine(ThrowingHomeWorks(studentPoint.position));
+            StopCoroutine(ThrowingHomeWorks());
         }
     }
 
     /// <summary>
     /// Coroutine for throwing the school stuff at the student.
     /// </summary>
-    private IEnumerator ThrowingHomeWorks(Vector3 targetPosition)
+    private IEnumerator ThrowingHomeWorks()
     {
         while (true)
         {
             if (TeacherState.ThrowingState == state)
             {
                 GameObject homework = TeacherObjectPool.Instance.GetObject();
-                targetPosition = studentPoint.position;
 
-                if (homework != null && targetPosition != null)
+                if (homework != null)
                 {
                     float step = throwingSpeed * Time.deltaTime;
 

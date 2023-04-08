@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : Singleton<Player>
@@ -11,6 +12,7 @@ public class Player : Singleton<Player>
     [SerializeField] private int speed = 5;
 
     private Rigidbody2D rb;
+    private UnityEvent onEnergyChange;
 
     public int Energy
     {
@@ -37,10 +39,27 @@ public class Player : Singleton<Player>
     public void ReplenishEnergy(int amount)
     {
         Energy += amount;
+        onEnergyChange?.Invoke();
     }
 
+    /// <summary>
+    /// Take damage from the player's energy by the amount passed.
+    /// </summary>
     public void TakeDamage(int amount)
     {
         Energy -= amount;
+        Die();
+        onEnergyChange?.Invoke();
+
+        print("Damage taken!");
+    }
+
+    private void Die()
+    {
+        if (Energy <= 0)
+        {
+            print("Player died!");
+            Destroy(gameObject);
+        }
     }
 }

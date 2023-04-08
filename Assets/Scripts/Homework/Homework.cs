@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Homework : MonoBehaviour
 {
+    [Header("Homework Settings")]
+    [SerializeField] private int damageAmount = 5;
+
     private Rigidbody2D rb;
 
     private void Awake()
@@ -13,29 +16,8 @@ public class Homework : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Wall"))
+        if (other.CompareTag("DestroyHomeworks"))
         {
-            if (gameObject.CompareTag("Homework"))
-            {
-                HomeworkObjectPool.Instance.ReturnObject(gameObject);
-            }
-            else if (gameObject.CompareTag("TeacherHomework"))
-            {
-                TeacherObjectPool.Instance.ReturnObject(gameObject);
-            }
-
-            // HomeworkObjectPool.Instance.ReturnObject(gameObject);
-            // TeacherObjectPool.Instance.ReturnObjectToPool(gameObject);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Wall"))
-        {
-            // Student.Instance.TakeDamage();
-            // TeacherObjectPool.Instance.ReturnObject(gameObject);
-            // HomeworkObjectPool.Instance.ReturnObject(gameObject);
             if (gameObject.CompareTag("Homework"))
             {
                 HomeworkObjectPool.Instance.ReturnObject(gameObject);
