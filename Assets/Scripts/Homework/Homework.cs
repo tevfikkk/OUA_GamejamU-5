@@ -15,7 +15,35 @@ public class Homework : MonoBehaviour
     {
         if (other.CompareTag("Wall"))
         {
-            HomeworkObjectPool.Instance.ReturnObject(gameObject);
+            if (gameObject.CompareTag("Homework"))
+            {
+                HomeworkObjectPool.Instance.ReturnObject(gameObject);
+            }
+            else if (gameObject.CompareTag("TeacherHomework"))
+            {
+                TeacherObjectPool.Instance.ReturnObject(gameObject);
+            }
+
+            // HomeworkObjectPool.Instance.ReturnObject(gameObject);
+            // TeacherObjectPool.Instance.ReturnObjectToPool(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            // Student.Instance.TakeDamage();
+            // TeacherObjectPool.Instance.ReturnObject(gameObject);
+            // HomeworkObjectPool.Instance.ReturnObject(gameObject);
+            if (gameObject.CompareTag("Homework"))
+            {
+                HomeworkObjectPool.Instance.ReturnObject(gameObject);
+            }
+            else if (gameObject.CompareTag("TeacherHomework"))
+            {
+                TeacherObjectPool.Instance.ReturnObject(gameObject);
+            }
         }
     }
 }

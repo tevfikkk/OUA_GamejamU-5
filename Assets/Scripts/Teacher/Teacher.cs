@@ -18,12 +18,15 @@ public class Teacher : MonoBehaviour
     }
 
     [Header("Teacher Object Settings")]
+    [SerializeField] private GameObject homeworkPrefabVar;
     [SerializeField] private TeacherState state = TeacherState.IdleState;
     [SerializeField] private float throwingSpeed = 2.5f;
+    [SerializeField] private float delayBetweenThrows = 1f;
+    [SerializeField] private Transform studentPoint; // 
+
 
     private void Start()
     {
-        // Set the initial state of the teacher
         SetState(TeacherState.IdleState);
     }
 
@@ -59,6 +62,7 @@ public class Teacher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SetState(TeacherState.ThrowingState);
+            StartCoroutine(ThrowingHomeWorks(studentPoint.position));
         }
     }
 
@@ -77,6 +81,34 @@ public class Teacher : MonoBehaviour
         {
             SetState(TeacherState.IdleState);
             Debug.Log("Teacher is collecting the school stuff.");
+        }
+    }
+
+    /// <summary>
+    /// Coroutine for throwing the school stuff at the student.
+    /// </summary>
+    private IEnumerator ThrowingHomeWorks(Vector3 targetPosition)
+    {
+        while (true)
+        {
+            if (TeacherState.ThrowingState == state)
+            {
+                GameObject homework = TeacherObjectPool.Instance.GetObject();
+                targetPosition = studentPoint.position;
+
+                if (homework != null && targetPosition != null)
+                {
+                    float step = throwingSpeed * Time.deltaTime;
+
+                    homework.transform.position = transform.position;
+                    // Random range is used to make the homework throw more random.
+                    homework.GetComponent<Rigidbody2D>().AddForce(Vector2.left * Random.Range(300f, 500f));
+                    // homework.transform.position = Vector3.Lerp(homework.transform.position, targetPosition, step);
+                    homework.SetActive(true);
+                }
+            }
+
+            yield return new WaitForSeconds(delayBetweenThrows);
         }
     }
 }
