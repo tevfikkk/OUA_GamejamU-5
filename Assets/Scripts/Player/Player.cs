@@ -9,7 +9,7 @@ public class Player : Singleton<Player>
 {
     [Header("Player Settings")]
     [SerializeField] private int energy = 40;
-    [SerializeField] private int speed = 5;
+    [SerializeField] private float speed = 5;
 
     private Rigidbody2D rb;
     private UnityEvent onEnergyChange;
@@ -20,7 +20,7 @@ public class Player : Singleton<Player>
         set => energy = Math.Clamp(value, 0, 100);
     }
 
-    public int Speed
+    public float Speed
     {
         get => speed;
         set => speed = Math.Clamp(value, 0, 10);
@@ -30,7 +30,13 @@ public class Player : Singleton<Player>
     {
         base.Awake();
 
+        onEnergyChange = new UnityEvent();
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        ChangeSpeedDependingOnEnergy();
     }
 
     /// <summary>
@@ -52,6 +58,22 @@ public class Player : Singleton<Player>
         onEnergyChange?.Invoke();
 
         print("Damage taken!");
+    }
+
+    private void ChangeSpeedDependingOnEnergy()
+    {
+        if (Energy <= 20)
+        {
+            Speed -= 2f;
+        }
+        else if (Energy > 20 && Energy <= 60)
+        {
+            Speed = 5f;
+        }
+        else if (Energy > 60)
+        {
+            Speed += 2f;
+        }
     }
 
     private void Die()
