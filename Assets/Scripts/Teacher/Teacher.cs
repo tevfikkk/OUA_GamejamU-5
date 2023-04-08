@@ -7,23 +7,23 @@ using UnityEngine;
 /// It is responsible for the teacher's movement, animations, and interactions with the student.
 /// </summary>
 
-public class Teacher : MonoBehaviour
+public class Teacher : MonoBehaviour, ITeacher
 {
     // Teacher State Machine
     public enum TeacherState
     {
         IdleState,
         ThrowingState, // Throwing scholl stuff at the student
-        CollectingState // Collecting the scholl stuff
     }
 
     [Header("Teacher Object Settings")]
     [SerializeField] private TeacherState state = TeacherState.IdleState;
     [SerializeField] private float throwingSpeed = 2.5f;
+    [SerializeField] private float delayBetweenThrows = 1f;
+    [SerializeField] private Transform studentPoint;
 
     private void Start()
     {
-        // Set the initial state of the teacher
         SetState(TeacherState.IdleState);
     }
 
@@ -36,9 +36,6 @@ public class Teacher : MonoBehaviour
                 break;
             case TeacherState.ThrowingState:
                 ThrowingState();
-                break;
-            case TeacherState.CollectingState:
-                CollectingState();
                 break;
             default:
                 break;
@@ -54,29 +51,55 @@ public class Teacher : MonoBehaviour
         Debug.Log($"Teacher is now in {state} state.");
     }
 
-    private void IdlingState()
+    /// <summary>
+    /// Set the state to throwing state and start the coroutine.
+    /// </summary>
+    public void IdlingState()
     {
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SetState(TeacherState.ThrowingState);
+            StartCoroutine(ThrowingHomeWorks(studentPoint.position));
         }
     }
 
-    private void ThrowingState()
+    /// <summary>
+    /// Stop the coroutine so that the teacher can go back to the idle state.
+    /// </summary>
+    public void ThrowingState()
     {
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            SetState(TeacherState.CollectingState);
-            Debug.Log("Teacher is throwing school stuff at the student.");
+            SetState(TeacherState.IdleState);
+            StopCoroutine(ThrowingHomeWorks(studentPoint.position));
         }
     }
 
-    private void CollectingState()
+    /// <summary>
+    /// Coroutine for throwing the school stuff at the student.
+    /// </summary>
+    private IEnumerator ThrowingHomeWorks(Vector3 targetPosition)
     {
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        while (true)
         {
-            SetState(TeacherState.IdleState);
-            Debug.Log("Teacher is collecting the school stuff.");
+            if (TeacherState.ThrowingState == state)
+            {
+                GameObject homework = TeacherObjectPool.Instance.GetObject();
+                targetPosition = studentPoint.position;
+
+                if (homework != null && targetPosition != null)
+                {
+                    float step = throwingSpeed * Time.deltaTime;
+
+                    homework.transform.position = transform.position;
+                    // Random range is used to make the homework throw more random.
+                    homework.GetComponent<Rigidbody2D>().AddForce(Vector2.left * Random.Range(300f, 500f));
+                    // homework.transform.position = Vector3.Lerp(homework.transform.position, targetPosition, step);
+                    homework.SetActive(true);
+                }
+            }
+
+            yield return new WaitForSeconds(delayBetweenThrows);
         }
     }
 }

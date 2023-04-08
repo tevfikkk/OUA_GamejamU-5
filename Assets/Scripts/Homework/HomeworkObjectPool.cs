@@ -7,7 +7,7 @@ public class HomeworkObjectPool : MonoBehaviour
     public static HomeworkObjectPool Instance;
 
     private Queue<GameObject> pooledObjects = new Queue<GameObject>(); // Sira yapisi
-    private int amountToPool = 20; // Pool'da kac tane obje olacak
+    private int amountToPool = 10; // Pool'da kac tane obje olacak
 
     [SerializeField] private GameObject homeworkPrefab; // Pool'da olusturulacak obje
     private GameObject poolParent; // Pool'daki objelerin parent'i
