@@ -7,7 +7,7 @@ using UnityEngine;
 /// It is responsible for the teacher's movement, animations, and interactions with the student.
 /// </summary>
 
-public class Teacher : MonoBehaviour
+public class Teacher : MonoBehaviour, ITeacher
 {
     // Teacher State Machine
     public enum TeacherState
@@ -21,7 +21,6 @@ public class Teacher : MonoBehaviour
     [SerializeField] private float throwingSpeed = 2.5f;
     [SerializeField] private float delayBetweenThrows = 1f;
     [SerializeField] private Transform studentPoint;
-
 
     private void Start()
     {
@@ -52,7 +51,10 @@ public class Teacher : MonoBehaviour
         Debug.Log($"Teacher is now in {state} state.");
     }
 
-    private void IdlingState()
+    /// <summary>
+    /// Set the state to throwing state and start the coroutine.
+    /// </summary>
+    public void IdlingState()
     {
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
@@ -61,7 +63,10 @@ public class Teacher : MonoBehaviour
         }
     }
 
-    private void ThrowingState()
+    /// <summary>
+    /// Stop the coroutine so that the teacher can go back to the idle state.
+    /// </summary>
+    public void ThrowingState()
     {
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
