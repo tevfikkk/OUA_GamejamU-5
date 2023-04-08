@@ -7,12 +7,14 @@ public class HomeworkSpawnManager : MonoBehaviour
     [Header("Homework Spawn Settings")]
     [SerializeField] private GameObject homeworkPrefab; // Homework prefab
     [SerializeField] private float spawnSpeedDelay = 2f; // Homeworkun spawn hizi
+    [SerializeField] private float destoyHomeworkDelay = 5f; // Homeworkun yok olma hizi
 
     [Header("Spawner Movement Settings")]
     [SerializeField] private float movingSpeed = 5f; // Homeworkun spawn konumunu hareket ettirme hizi
     [SerializeField] private float spawnDistance = 1f; // Homeworkun spawn mesafesi
 
     private Vector3 spawnPos; // Homeworkun spawn konumu
+    private Homework homework;
 
     private Coroutine spawnHomeworkCoroutine; // Homeworkun spawn fonksiyonu
 
@@ -35,8 +37,27 @@ public class HomeworkSpawnManager : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnSpeedDelay);
 
-            Instantiate(homeworkPrefab, transform.position, Quaternion.identity);
+            GameObject homework = HomeworkObjectPool.Instance.GetObject(); // Get the homework object from the object pool
+
+            if (homework != null)
+            {
+                homework.transform.position = transform.position; // Set the position of the homework object
+                homework.SetActive(true); // Activate the homework object
+            }
         }
+
+        // GameObject homework = HomeworkObjectPool.Instance.GetObject(); // Homework objesini pool'dan al
+
+        // if (homework != null)
+        // {
+        //     while (true)
+        //     {
+        //         yield return new WaitForSeconds(spawnSpeedDelay);
+
+        //         Instantiate(homework, transform.position, Quaternion.identity);
+        //         homework.SetActive(true);
+        //     }
+        // }
     }
 
     private IEnumerator MoveSpawnManager()
