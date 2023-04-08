@@ -8,6 +8,7 @@ TagManager:
   - TeacherHomework
   - Homework
   - DestroyHomeworks
+  - Ladder
   layers:
   - Default
   - TransparentFX
