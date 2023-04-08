@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Game Manager Settings")]
+    [SerializeField] private GameObject player;
+    [SerializeField] private Transform playerSpawnPoint;
+
+    // [Space(10)]
+
+
+    private void Start()
     {
-        
+        SpawnPlayer();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SpawnPlayer()
     {
-        
+        if (player != null)
+        {
+            Instantiate(player, playerSpawnPoint.position, Quaternion.identity);
+        }
     }
 }
