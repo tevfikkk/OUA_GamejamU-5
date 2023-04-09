@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a7777fc75ff8432bbf3f7004f5072de
+guid: d6e0b413ebf434339afb9cb574f5b148
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Extra_plants (16 x 16)_0
+      name: kryss-ikari-old-man-full-sheet-export_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 16
-        width: 46
-        height: 48
+        x: 29
+        y: 37
+        width: 128
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1684b3359a2e4d3e9392f25580900e5
-      internalID: -1816693207
+      spriteID: 295a31a5a51e6419493083cd3b14ebd5
+      internalID: -1389331161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extra_plants (16 x 16)_1
+      name: kryss-ikari-old-man-full-sheet-export_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 16
-        width: 50
-        height: 18
+        x: 278
+        y: 37
+        width: 119
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21066ab3ca77141d5a66c8cd7f073ed3
-      internalID: -156358568
+      spriteID: c4b775f20280f4c15a398513aedb79e0
+      internalID: 1122669119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kryss-ikari-old-man-full-sheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 36
+        width: 119
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef93c89a0df741328e54e3384154171
+      internalID: -1233739268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kryss-ikari-old-man-full-sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 36
+        width: 121
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da88853b2461d4130a72f53caf763769
+      internalID: 1536273561
       vertices: []
       indices: 
       edges: []
@@ -157,8 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Extra_plants (16 x 16)_0: -1816693207
-      Extra_plants (16 x 16)_1: -156358568
+      kryss-ikari-old-man-full-sheet-export_0: -1389331161
+      kryss-ikari-old-man-full-sheet-export_1: 1122669119
+      kryss-ikari-old-man-full-sheet-export_2: -1233739268
+      kryss-ikari-old-man-full-sheet-export_3: 1536273561
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
