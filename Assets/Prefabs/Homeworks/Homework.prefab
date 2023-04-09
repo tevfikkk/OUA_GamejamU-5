@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6803283734897967447}
   - component: {fileID: 6803283734897967446}
-  - component: {fileID: 6803283734897967441}
+  - component: {fileID: 7410167734980581032}
   - component: {fileID: 6803283734897967440}
   - component: {fileID: 6581013897807198972}
   m_Layer: 7
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 6803283734897967443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.092333056, y: -0.043655, z: 0}
-  m_LocalScale: {x: 0.32825, y: 0.32825, z: 0.32825}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,9 +75,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.764151, g: 0.11843387, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1956635099, guid: 1d428af4c70594b52bdecbab913236e8, type: 3}
+  m_Color: {r: 0.8018868, g: 0.4856569, b: 0.28368637, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -87,8 +87,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6803283734897967441
-BoxCollider2D:
+--- !u!58 &7410167734980581032
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,19 +100,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.0040893285, y: 0.011683792}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.0823028
 --- !u!50 &6803283734897967440
 Rigidbody2D:
   serializedVersion: 4

@@ -8,27 +8,16 @@ public class PlatformMove : MonoBehaviour
     [SerializeField] private float distance = 1f; // Platformun jiggle mesafesi
 
     private Vector3 startPos; // Platformun baslangic konumu
+    private float sineValue = 0f;
 
     private void Start()
     {
         startPos = transform.position; // Platformun baslangic konumunu kaydet
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        StartCoroutine(MakeThePlatformJiggle()); // Platformun jiggle fonksiyonunu calistir
-    }
-
-
-    /// <summary>
-    /// Platformun jiggle fonksiyonu
-    /// </summary>
-    private IEnumerator MakeThePlatformJiggle()
-    {
-        while (true)
-        {
-            transform.position = Vector3.right * distance * Mathf.Sin(Time.time * jiggleSpeed) * 0.5f + startPos; // Platformun jiggle fonksiyonu
-            yield return null;
-        }
+        sineValue = Mathf.Sin(Time.time * jiggleSpeed);
+        transform.position = Vector3.right * distance * sineValue * 0.5f + startPos;
     }
 }

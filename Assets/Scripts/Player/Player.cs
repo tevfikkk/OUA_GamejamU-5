@@ -5,12 +5,11 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Player : Singleton<Player>
+public class Player : MonoBehaviour
 {
     [Header("Player Settings")]
     [SerializeField] private int energy = 40;
     [SerializeField] private float speed = 5;
-
 
     public ParticleSystem _particleSystem;
     private Rigidbody2D rb;
@@ -28,10 +27,8 @@ public class Player : Singleton<Player>
         set => speed = Math.Clamp(value, 0, 10);
     }
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-
         onEnergyChange = new UnityEvent();
         rb = GetComponent<Rigidbody2D>();
         _particleSystem = GetComponentInChildren<ParticleSystem>();

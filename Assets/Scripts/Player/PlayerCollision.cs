@@ -11,7 +11,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Homework") || other.gameObject.CompareTag("TeacherHomework"))
         {
-            Player.Instance.TakeDamage(damageAmount);
+            FindObjectOfType<Player>()?.TakeDamage(damageAmount);
             HomeworkObjectPool.Instance.ReturnObject(other.gameObject);
         }
     }

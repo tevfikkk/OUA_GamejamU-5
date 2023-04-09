@@ -27,11 +27,8 @@ public class HomeworkSpawnManager : MonoBehaviour
     {
         StartCoroutine(MoveSpawnManager()); // Homeworkun spawn konumunu hareket ettir
 
-        if (Input.GetKeyDown(KeyCode.Alpha1)) // 1 tusuna basildiginda homework spawn fonksiyonunu calistir
-        {
-            if (spawnHomeworkCoroutine == null)
-                spawnHomeworkCoroutine = StartCoroutine(SpawnHomework()); // Homeworkun spawn fonksiyonunu calistir (Coroutine
-        }
+        if (spawnHomeworkCoroutine == null)
+            spawnHomeworkCoroutine = StartCoroutine(SpawnHomework()); // Homeworkun spawn fonksiyonunu calistir (Coroutine
     }
 
     private IEnumerator SpawnHomework()
@@ -48,19 +45,6 @@ public class HomeworkSpawnManager : MonoBehaviour
                 homework.SetActive(true); // Activate the homework object
             }
         }
-
-        // GameObject homework = HomeworkObjectPool.Instance.GetObject(); // Homework objesini pool'dan al
-
-        // if (homework != null)
-        // {
-        //     while (true)
-        //     {
-        //         yield return new WaitForSeconds(spawnSpeedDelay);
-
-        //         Instantiate(homework, transform.position, Quaternion.identity);
-        //         homework.SetActive(true);
-        //     }
-        // }
     }
 
     private IEnumerator MoveSpawnManager()

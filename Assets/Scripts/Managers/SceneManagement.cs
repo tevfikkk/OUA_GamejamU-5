@@ -3,22 +3,20 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class SceneManagement : Singleton<SceneManagement>
+public class SceneManagement : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
         switch (other.tag)
         {
             case "Level1":
-                print("Level 1");
-                GameManager.Instance.SpawnPlayerToLevel2();
+                SceneManager.LoadScene("Level1Design beyza son");
                 break;
             case "Level2":
-                print("Level 2");
-                GameManager.Instance.SpawnPlayerToLevel1();
+                SceneManager.LoadScene("SampleScene");
                 break;
             case "Level3":
-                //SceneManager.LoadScene(2);
+                //SceneManager.LoadScene(3);
                 break;
             default:
                 break;

@@ -9,10 +9,12 @@ public class PlayerLadderMovement : MonoBehaviour
     private bool isClimbing;
 
     private Rigidbody2D rb;
+    private Player player;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = FindObjectOfType<Player>();
     }
 
     private void Update()
@@ -30,7 +32,7 @@ public class PlayerLadderMovement : MonoBehaviour
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(rb.velocity.x, vertical * Player.Instance.Speed);
+            rb.velocity = new Vector2(rb.velocity.x, vertical * player.Speed);
         }
         else
         {

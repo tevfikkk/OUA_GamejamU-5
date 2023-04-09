@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2 wallJumpingPower = new Vector2(8f, 16f);
     [SerializeField] private bool isWallJumping;
 
+    private Player player;
+
     private float horizontal;
     private Rigidbody2D rb;
     private bool isFacingRight = true;
@@ -37,6 +39,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        player = FindObjectOfType<Player>();
     }
 
     private void Update()
@@ -49,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * Player.Instance.Speed, rb.velocity.y);
+        rb.velocity = new Vector2(horizontal * player.Speed, rb.velocity.y);
     }
 
     /// <summary>
