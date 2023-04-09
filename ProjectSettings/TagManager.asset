@@ -9,10 +9,6 @@ TagManager:
   - Homework
   - DestroyHomeworks
   - Ladder
-  - TestLevel1
-  - TestLevel2
-  - Level1
-  - Level2
   layers:
   - Default
   - TransparentFX
@@ -47,6 +43,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3555958039
+    locked: 0
+  - name: Midground
+    uniqueID: 77002707
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1275605403
     locked: 0
