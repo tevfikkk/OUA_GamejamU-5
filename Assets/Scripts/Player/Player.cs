@@ -11,6 +11,8 @@ public class Player : Singleton<Player>
     [SerializeField] private int energy = 40;
     [SerializeField] private float speed = 5;
 
+
+    public ParticleSystem _particleSystem;
     private Rigidbody2D rb;
     private UnityEvent onEnergyChange;
 
@@ -32,6 +34,7 @@ public class Player : Singleton<Player>
 
         onEnergyChange = new UnityEvent();
         rb = GetComponent<Rigidbody2D>();
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Update()
