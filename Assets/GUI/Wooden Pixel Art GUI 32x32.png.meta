@@ -386,7 +386,7 @@ TextureImporter:
         width: 28
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -394,6 +394,69 @@ TextureImporter:
       bones: []
       spriteID: 11911a4259db9c049a87ace88b0dec5c
       internalID: 1129554101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Pixel Art GUI 32x32_14
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 384
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9049ab369957a46a279916d2becca1
+      internalID: 190685615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Pixel Art GUI 32x32_15
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 350
+        width: 92
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cba193ad55fed2438979e7ea7fea314
+      internalID: 1899662803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Pixel Art GUI 32x32_16
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 144
+        width: 124
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41543e84f924d343851c3c7dfd680c7
+      internalID: -211004744
       vertices: []
       indices: 
       edges: []
@@ -415,6 +478,9 @@ TextureImporter:
       Wooden Pixel Art GUI 32x32_11: 226483621
       Wooden Pixel Art GUI 32x32_12: -1535598348
       Wooden Pixel Art GUI 32x32_13: 1129554101
+      Wooden Pixel Art GUI 32x32_14: 190685615
+      Wooden Pixel Art GUI 32x32_15: 1899662803
+      Wooden Pixel Art GUI 32x32_16: -211004744
       Wooden Pixel Art GUI 32x32_2: -1197372080
       Wooden Pixel Art GUI 32x32_3: 736727151
       Wooden Pixel Art GUI 32x32_4: -1836774368
