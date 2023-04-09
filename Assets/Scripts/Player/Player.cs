@@ -64,15 +64,15 @@ public class Player : Singleton<Player>
     {
         if (Energy <= 20)
         {
-            Speed -= 2f;
+            Speed = 5f;
         }
         else if (Energy > 20 && Energy <= 60)
         {
-            Speed = 5f;
+            Speed = 6f;
         }
         else if (Energy > 60)
         {
-            Speed += 2f;
+            Speed = 7f;
         }
     }
 

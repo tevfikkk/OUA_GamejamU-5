@@ -34,7 +34,7 @@ public class PlayerLadderMovement : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 1f;
+            rb.gravityScale = 3.5f;
         }
     }
 
