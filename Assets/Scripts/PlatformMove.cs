@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformMove : MonoBehaviour
 {
     [SerializeField] private float jiggleSpeed = 1f; // Platformun jiggle hizi
+    [SerializeField] private float distance = 1f; // Platformun jiggle mesafesi
 
     private Vector3 startPos; // Platformun baslangic konumu
 
@@ -26,7 +27,7 @@ public class PlatformMove : MonoBehaviour
     {
         while (true)
         {
-            transform.position = Vector3.right * Mathf.Sin(Time.time * jiggleSpeed) * 0.5f + startPos; // Platformun jiggle fonksiyonu
+            transform.position = Vector3.right * distance * Mathf.Sin(Time.time * jiggleSpeed) * 0.5f + startPos; // Platformun jiggle fonksiyonu
             yield return null;
         }
     }
