@@ -9,14 +9,16 @@ public class SceneManagement : Singleton<SceneManagement>
     {
         switch (other.tag)
         {
-            case "Street":
-                SceneManager.LoadScene(0);
-                break;
             case "Level1":
-                SceneManager.LoadScene(1);
+                print("Level 1");
+                GameManager.Instance.SpawnPlayerToLevel2();
                 break;
             case "Level2":
-                SceneManager.LoadScene(2);
+                print("Level 2");
+                GameManager.Instance.SpawnPlayerToLevel1();
+                break;
+            case "Level3":
+                //SceneManager.LoadScene(2);
                 break;
             default:
                 break;

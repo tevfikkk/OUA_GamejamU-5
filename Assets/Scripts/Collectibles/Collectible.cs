@@ -16,6 +16,7 @@ public class Collectible : MonoBehaviour
 
     private void Start()
     {
+        collectibleSO = Instantiate(collectibleSO);
         // spriteRenderer.sprite = collectibleSO.collectibleSprite;
     }
 

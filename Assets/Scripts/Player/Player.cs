@@ -74,6 +74,8 @@ public class Player : Singleton<Player>
         {
             Speed = 7f;
         }
+
+        onEnergyChange?.Invoke();
     }
 
     private void Die()
