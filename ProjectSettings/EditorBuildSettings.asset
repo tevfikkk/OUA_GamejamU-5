@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Oynanilabilir Sahneler/FinishDialogue.unity
     guid: 9f98648fd2453465ea622a2ab6e197fd
   - enabled: 1
+    path: Assets/Scenes/Oynanilabilir Sahneler/FinishScene.unity
+    guid: 6f53268af1acfde41afa5ae2ce7bfab1
+  - enabled: 1
     path: Assets/Scenes/Oynanilabilir Sahneler/CreditScene.unity
     guid: 89d5a866dbcb1b14886de2d428fdd9a0
   - enabled: 1

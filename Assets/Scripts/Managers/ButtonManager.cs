@@ -13,5 +13,7 @@ public class ButtonManager : MonoBehaviour
 
     public void Level1() => SceneManager.LoadScene("Level1Design");
 
+    public void FinishScene() => SceneManager.LoadScene("FinishScene");
+
     public void Exit() => Application.Quit();
 }
