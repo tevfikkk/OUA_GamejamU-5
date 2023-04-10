@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Oynanilabilir Sahneler/Level1Design.unity
+    path: Assets/Scenes/Eski Scenes/Level1Design bozuk olabilir.unity
     guid: 42b453141f5aecd4190b232aa9f5f4ea
   - enabled: 1
-    path: Assets/Scenes/Level2Design.unity
-    guid: e666b403bd6723749a004afd91f6c053
+    path: Assets/Scenes/Oynanilabilir Sahneler/Level2Design.unity
+    guid: 6c92f3a9f6152674ba32b3009a5daa2a
+  - enabled: 1
+    path: Assets/Scenes/FinishDialogue.unity
+    guid: 9f98648fd2453465ea622a2ab6e197fd
+  - enabled: 1
+    path: Assets/Scenes/Oynanilabilir Sahneler/GameOverScene.unity
+    guid: e2e9bc4b714bf4c4aacd2d46af33a785
   m_configObjects: {}

@@ -16654,11 +16654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6379352901628493252, guid: 47a6346de0ef56745a5a27085f665148, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.29
+      value: 145.6
       objectReference: {fileID: 0}
     - target: {fileID: 6379352901628493252, guid: 47a6346de0ef56745a5a27085f665148, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: -4.3
       objectReference: {fileID: 0}
     - target: {fileID: 6379352901628493252, guid: 47a6346de0ef56745a5a27085f665148, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72609,7 +72609,7 @@ GameObject:
   - component: {fileID: 1896415371}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Gameover
+  m_TagString: FinishDialog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81226,7 +81226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270844235419307033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8727703, y: 0.95478004, z: -10}
+  m_LocalPosition: {x: 139.19981, y: -0.5862498, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81341,7 +81341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270844235919512599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.747778, y: -0.8400002, z: -10}
+  m_LocalPosition: {x: 152.14223, y: -5.1000004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

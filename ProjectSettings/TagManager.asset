@@ -12,6 +12,7 @@ TagManager:
   - Level2
   - Level1
   - Gameover
+  - FinishDialog
   layers:
   - Default
   - TransparentFX

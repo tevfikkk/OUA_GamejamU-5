@@ -15,8 +15,8 @@ public class SceneManagement : MonoBehaviour
             case "Level2":
                 SceneManager.LoadScene("Level2Design");
                 break;
-            case "Gameover":
-                print("Gameover!!!!!!!!!!!!!!!!!!!!!");
+            case "FinishDialog":
+                SceneManager.LoadScene("FinishDialogue");
                 break;
             default:
                 break;
