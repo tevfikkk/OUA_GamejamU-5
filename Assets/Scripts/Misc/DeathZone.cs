@@ -9,7 +9,7 @@ public class DeathZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Gameover");
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 }
