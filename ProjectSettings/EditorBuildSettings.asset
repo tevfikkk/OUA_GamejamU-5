@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Oynanilabilir Sahneler/Level2Design.unity
     guid: 6c92f3a9f6152674ba32b3009a5daa2a
   - enabled: 1
-    path: Assets/Scenes/FinishDialogue.unity
+    path: Assets/Scenes/Oynanilabilir Sahneler/FinishDialogue.unity
     guid: 9f98648fd2453465ea622a2ab6e197fd
   - enabled: 1
     path: Assets/Scenes/Oynanilabilir Sahneler/CreditScene.unity
