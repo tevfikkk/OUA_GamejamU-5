@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-    public void MainMenu() => SceneManager.LoadScene("MainMenu");
+    public void MainMenu() => SceneManager.LoadScene("EntranceScene01");
 
-    public void Credits() => SceneManager.LoadScene("Credits");
+    public void DialogScene() => SceneManager.LoadScene("DıalogueScene");
+
+    public void Credits() => SceneManager.LoadScene("CreditScene");
+
+    public void Level1() => SceneManager.LoadScene("Level1Design");
+
+    public void Exit() => Application.Quit();
 }

@@ -611,7 +611,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 01d6417b0d5984c1b841774eb77c665a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -721,7 +721,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 873357314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1063770146}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: Credits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &873357314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,6 +1126,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054900387}
   m_CullTransparentMesh: 1
+--- !u!114 &1063770146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2094552173630691093, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+  m_PrefabInstance: {fileID: 2094552174685081399}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd634d38c75a95d47b698f305ce9a78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1356700939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1194,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 135b038b57b724313842284cd380187a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1416,7 +1439,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1406159937}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1063770146}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: DialogScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1406159937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,7 +1641,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1687996427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1063770146}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1687996427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1645,3 +1692,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687996424}
   m_CullTransparentMesh: 1
+--- !u!1001 &2094552174685081399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1009.4704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 462.7051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6216877
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691094, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094552173630691095, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
+      propertyPath: m_Name
+      value: ButtonManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04ffb939242b3204a942f911c48dce25, type: 3}
