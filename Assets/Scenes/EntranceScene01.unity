@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 873357314}
   - component: {fileID: 873357313}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button - Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,8 +591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.900024, y: -4.299988}
-  m_SizeDelta: {x: 318.6479, y: 109.8866}
+  m_AnchoredPosition: {x: -21.000011, y: -23.440002}
+  m_SizeDelta: {x: 402.4207, y: 138.7759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873357313
 MonoBehaviour:
@@ -761,8 +761,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -980,8 +980,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1115,8 +1115,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1178,7 +1178,7 @@ GameObject:
   - component: {fileID: 1406159937}
   - component: {fileID: 1406159936}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button - Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,8 +1202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.900024, y: 126.70001}
-  m_SizeDelta: {x: 318.6479, y: 109.8866}
+  m_AnchoredPosition: {x: -21.000011, y: 142}
+  m_SizeDelta: {x: 402.4207, y: 138.7759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406159936
 MonoBehaviour:
@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 1687996427}
   - component: {fileID: 1687996426}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button - Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1392,8 +1392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.9, y: -135.5}
-  m_SizeDelta: {x: 318.6479, y: 109.8866}
+  m_AnchoredPosition: {x: -21, y: -189.13269}
+  m_SizeDelta: {x: 402.4207, y: 138.7759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687996426
 MonoBehaviour:
