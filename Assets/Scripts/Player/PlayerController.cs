@@ -36,9 +36,16 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isFacingRight = true;
 
+    // Animator properties
+    private Animator animator;
+    private bool isRunning = false;
+    private bool isJumping = false;
+    private bool isFalling = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         player = FindObjectOfType<Player>();
     }
@@ -46,7 +53,35 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         WallSlide();
-        // WallJump();
+
+        if (Mathf.Abs(horizontal) > 0)
+        {
+            isRunning = true;
+        }
+        else
+        {
+            isRunning = false;
+        }
+
+        if (rb.velocity.y > 0)
+        {
+            isJumping = true;
+            isFalling = false;
+        }
+        else if (rb.velocity.y < 0)
+        {
+            isJumping = false;
+            isFalling = true;
+        }
+        else
+        {
+            isJumping = false;
+            isFalling = false;
+        }
+
+        animator.SetBool("isRunning", isRunning);
+        animator.SetBool("isJumping", isJumping);
+        animator.SetBool("isFalling", isFalling);
 
         Flip();
     }

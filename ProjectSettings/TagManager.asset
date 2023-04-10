@@ -9,6 +9,9 @@ TagManager:
   - Homework
   - DestroyHomeworks
   - Ladder
+  - Level2
+  - Level1
+  - Gameover
   layers:
   - Default
   - TransparentFX

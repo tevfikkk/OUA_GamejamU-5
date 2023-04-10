@@ -21,25 +21,32 @@ public class Teacher : MonoBehaviour, ITeacher
     [SerializeField] private float throwingSpeed = 2.5f;
     [SerializeField] private float delayBetweenThrows = 1f;
 
-    private void Start()
+    private TeacherObjectPool teacherObjectPool;
+
+    private void Awake()
     {
-        SetState(TeacherState.IdleState);
+        teacherObjectPool = FindAnyObjectByType<TeacherObjectPool>();
     }
 
-    private void Update()
+    private void Start()
     {
-        switch (state)
-        {
-            case TeacherState.IdleState:
-                IdlingState();
-                break;
-            case TeacherState.ThrowingState:
-                ThrowingState();
-                break;
-            default:
-                break;
-        }
+        SetState(TeacherState.ThrowingState);
     }
+
+    // private void Update()
+    // {
+    //     switch (state)
+    //     {
+    //         case TeacherState.IdleState:
+    //             IdlingState();
+    //             break;
+    //         case TeacherState.ThrowingState:
+    //             ThrowingState();
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // }
 
     /// <summary>
     /// Set the state of the teacher depending upon the state passed.
@@ -55,11 +62,8 @@ public class Teacher : MonoBehaviour, ITeacher
     /// </summary>
     public void IdlingState()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SetState(TeacherState.ThrowingState);
-            StartCoroutine(ThrowingHomeWorks());
-        }
+        SetState(TeacherState.ThrowingState);
+        StartCoroutine(ThrowingHomeWorks());
     }
 
     /// <summary>
@@ -67,11 +71,8 @@ public class Teacher : MonoBehaviour, ITeacher
     /// </summary>
     public void ThrowingState()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            SetState(TeacherState.IdleState);
-            StopCoroutine(ThrowingHomeWorks());
-        }
+        SetState(TeacherState.IdleState);
+        StopCoroutine(ThrowingHomeWorks());
     }
 
     /// <summary>
@@ -83,7 +84,7 @@ public class Teacher : MonoBehaviour, ITeacher
         {
             if (TeacherState.ThrowingState == state)
             {
-                GameObject homework = TeacherObjectPool.Instance.GetObject();
+                GameObject homework = teacherObjectPool.GetObject();
 
                 if (homework != null)
                 {

@@ -10,13 +10,13 @@ public class SceneManagement : MonoBehaviour
         switch (other.tag)
         {
             case "Level1":
-                SceneManager.LoadScene("Level1Design beyza son");
+                SceneManager.LoadScene("Level1Design");
                 break;
             case "Level2":
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("Level2Design");
                 break;
-            case "Level3":
-                //SceneManager.LoadScene(3);
+            case "Gameover":
+                print("Gameover!!!!!!!!!!!!!!!!!!!!!");
                 break;
             default:
                 break;
