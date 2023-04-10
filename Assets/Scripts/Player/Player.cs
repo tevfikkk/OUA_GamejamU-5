@@ -8,12 +8,14 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [Header("Player Settings")]
-    [SerializeField] private int energy = 40;
+    [SerializeField] private int energy = 100;
     [SerializeField] private float speed = 5;
 
     public ParticleSystem _particleSystem;
     private Rigidbody2D rb;
     private UnityEvent onEnergyChange;
+
+    private HealthBar healthBar;
 
     public int Energy
     {
@@ -32,11 +34,16 @@ public class Player : MonoBehaviour
         onEnergyChange = new UnityEvent();
         rb = GetComponent<Rigidbody2D>();
         _particleSystem = GetComponentInChildren<ParticleSystem>();
+        healthBar = FindObjectOfType<HealthBar>();
+
+        healthBar.SetMaxHealth(Energy);
     }
 
     private void Update()
     {
         ChangeSpeedDependingOnEnergy();
+
+        healthBar.SetHealth(Energy);
     }
 
     /// <summary>
