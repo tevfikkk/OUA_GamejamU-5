@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeacherObjectPool : Singleton<TeacherObjectPool>
+public class TeacherObjectPool : MonoBehaviour
 {
     [SerializeField] private GameObject objectPrefab;
     [SerializeField] private int poolSize = 10;

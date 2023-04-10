@@ -9,9 +9,12 @@ public class Homework : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private TeacherObjectPool teacherObjectPool;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        teacherObjectPool = FindAnyObjectByType<TeacherObjectPool>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -24,7 +27,7 @@ public class Homework : MonoBehaviour
             }
             else if (gameObject.CompareTag("TeacherHomework"))
             {
-                TeacherObjectPool.Instance.ReturnObject(gameObject);
+                teacherObjectPool.ReturnObject(gameObject);
             }
         }
     }

@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class StuffCollision : MonoBehaviour
 {
+    private TeacherObjectPool teacherObjectPool;
+
+    private void Awake()
+    {
+        teacherObjectPool = FindAnyObjectByType<TeacherObjectPool>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Wall"))
         {
             // Student.Instance.TakeDamage();
-            TeacherObjectPool.Instance.ReturnObject(gameObject);
+            teacherObjectPool.ReturnObject(gameObject);
             print($"other.gameObject.name: {gameObject.name}");
         }
     }
