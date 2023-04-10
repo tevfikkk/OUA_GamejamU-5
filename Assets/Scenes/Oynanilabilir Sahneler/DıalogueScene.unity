@@ -7696,32 +7696,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1935141563}
   sentences:
-  - 'SELENAY: Yapmayin be hocam! Bugunde mi ders calisacagim? '
-  - 'MEHMET HOCA: Ders calismayipta ne yapacaksin? Dunyaya felaket getirenlerden
+  - 'SELENAY: Yapmayin be hocam! Bugun de mi ders calisacagim? '
+  - 'MEHMET HOCA: Ders calismayip da ne yapacaksin? Dunyaya felaket getirenlerden
     mi olacaksin? '
-  - 'SELENAY: Ama hocam durmadan calismaninda bir mantigi yok ki! Verimli calismali
+  - 'SELENAY: Ama hocam durmadan calismanin da bir mantigi yok ki! Verimli calismali
     insan. '
   - 'MEHMET HOCA: Ah kizim ah, sen bu felaket basimiza geldiginde yasadiklarimizi
-    bilmedigin icin boyle konusuyorsun. '
+    bilmedigin icin boyle konusuyorsun.'
   - 'SELENAY: Neler yasadiniz hocam? '
   - "MEHMET HOCA: Y\u0131llar y\u0131llar once, meslegini layikiyla yerine getirmeyen
     \xE7ok kisi vardi.  "
   - "MEHMET HOCA: Bu yuzden sular kirlendi, agaclar kontrolsuz kesildi ve zamanla
-    bu durum art\u0131k duzeltemeyecegimiz bir boyuta geldi. "
+    bu durum art\u0131k duzeltemeyecegimiz bir boyuta geldi."
   - "SELENAY: Bu yuzden mi art\u0131k yerlerde kimyasal s\u0131v\u0131lar var hocam? "
   - "MEHMET HOCA: Evet k\u0131z\u0131m, doga ana bu yasananlardan dolayi cok s\u0131n\u0131rlendi!  "
   - "MEHMET HOCA: Bu yuzden art\u0131k herkesin meslegini lay\u0131k\u0131yla icra
-    etmesi icin gokten odevler yagdiriyor!  "
+    etmesi icin gokten odevler yagdiriyor!"
   - "MEHMET HOCA: Doga anan\u0131n daha da sinirlenmemesi icin sana durmadan ders
     calismani soyluyorum, odev veriyorum. "
   - "SELENAY: Durmadan calisarak kendimi y\u0131pratmaktan baska bir sey yapmamis
     oluyorum hocam! "
-  - "MEHMET HOCA: Anlamiyorsun kizim, kendimizi ve d\xFCnyay\u0131 ancak bu sekilde
+  - "MEHMET HOCA: Anlamiyorsun kizim, kendimizi ve dunyay\u0131 ancak bu sekilde
     kurtarabiliriz! "
-  - "SELENAY: Sende beni anlam\u0131yorsun hocam! Tum bu odev sacmal\u0131klarindan
+  - "SELENAY: Sen de beni anlam\u0131yorsun hocam! Tum bu odev sacmal\u0131klarindan
     biktim, usandim! "
-  - "SELENAY: Sana odevlerinle hayat\u0131nda ba\u015Far\u0131lar dilerim, bir daha
-    bu akademiye adimimi atmayacagim! "
+  - "SELENAY: Sana odevlerinle hayat\u0131nda basar\u0131lar dilerim, bir daha bu
+    akademiye adimimi atmayacagim! "
   - "MEHMET HOCA: Gerceklerden kacamazsin! Eger \xE7ok istiyorsan git, odev yagmurlarindan
     ve kimyasal s\u0131v\u0131lardan kacmaya calis bakal\u0131m!  "
   - 'MEHMET HOCA: Pesini de oyle kolay birakacagim sanma! '
