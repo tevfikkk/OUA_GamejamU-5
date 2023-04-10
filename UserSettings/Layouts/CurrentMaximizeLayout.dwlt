@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 55347
+  controlID: 62044
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 55348
+  controlID: 62098
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 55349
+  controlID: 62099
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,9 +227,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 86130900
-      m_LastClickedID: 594822
-      m_ExpandedIDs: 088ffeff9e94feff2c96feff7696feff0e97feffd29bfeffbe9cfeffc0a0feff0aa1feffbaa1feffbca1fefff0b2feff1ab3feffc6b4feff48b6feff7cb6feffb0b6feffe6b6feff1cb7feffdeb7feff2ab8feff5cb8feff90b8feff5eb9feffeab9feff40bafeff74bafeffacbafeff04bbfeff5ebbfeff5ebcfeffaebcfeff30bdfeff6ebdfeffbebdfeff56befeff96befeffd8befeff1abffeff5cbffeffa2bffefff2bffeff36c0feff82c0feff1cc1feffc2c2feffc4c3feff22c4fefffccbfeff3ed6feff46d6feff48d6feffd6d8feffd2d9feffce46ffff6a48ffff5285ffff9093ffff42fbfffff4ffffffbee9040062ec04004af2040078f7050082080600147d0800a28a08003c8d08009ea40800fc1109007a120900
+      m_SelectedIDs: f86cfeff
+      m_LastClickedID: -103176
+      m_ExpandedIDs: 187bfeff147efeffac82feff3283feffa886feff0687feff4e87fefff287feff3a88feff8288feffcc88feff1689feff088ffeff9e94feff2c96feff7696feff0e97feffd29bfeffbe9cfeffc0a0feff0aa1feffbaa1feffbca1fefff0b2feff1ab3feffc6b4feff48b6feff7cb6feffb0b6feffe6b6feff1cb7feffdeb7feff2ab8feff5cb8feff90b8feff5eb9feffeab9feff40bafeff74bafeffacbafeff04bbfeff5ebbfeff5ebcfeffaebcfeff30bdfeff6ebdfeffbebdfeff56befeff96befeffd8befeff1abffeff5cbffeffa2bffefff2bffeff36c0feff82c0feff1cc1feffc2c2feffc4c3feff22c4fefffccbfeff3ed6feff46d6feff48d6feffd6d8feffd2d9feffce46ffff6a48ffff5285ffff9093ffff42fbfffff4ffffffbee9040062ec04004af2040078f7050082080600147d0800a28a08003c8d08009ea40800fc1109007a12090018520900365209006052090072520900ba52090082880900ca880900
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -245,7 +245,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.1578717, y: -0.20580123, z: 15.176301}
+    m_Target: {x: -0.6114539, y: 1.9611256, z: 15.083401}
     speed: 2
-    m_Value: {x: 0.1578717, y: -0.20580123, z: 15.176301}
+    m_Value: {x: -0.6114539, y: 1.9611256, z: 15.083401}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -613,9 +613,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.5439906
+    m_Target: 3.879869
     speed: 2
-    m_Value: 4.5439906
+    m_Value: 3.879869
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -735,22 +735,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Oynanilabilir Sahneler
+    - Assets/GUI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Oynanilabilir Sahneler
+  - Assets/GUI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/beyza/Documents/GitHub/Gamejam_OUA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 114.5}
-    m_SelectedIDs: fa270400
-    m_LastClickedID: 272378
-    m_ExpandedIDs: 00000000e88900001c8a0000265f030000ca9a3b
+    scrollPos: {x: 0, y: 50.5}
+    m_SelectedIDs: 148a0000
+    m_LastClickedID: 35348
+    m_ExpandedIDs: 00000000e8890000265f030000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -803,10 +803,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 86130900
-    m_LastClickedInstanceID: 594822
+    m_SelectedInstanceIDs: f86cfeff
+    m_LastClickedInstanceID: -103176
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000000000000d6270400
+    m_ExpandedInstanceIDs: c623000000000000b2890000481d0400
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
