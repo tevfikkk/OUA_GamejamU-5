@@ -874,7 +874,6 @@ GameObject:
   - component: {fileID: 893944220}
   - component: {fileID: 893944222}
   - component: {fileID: 893944221}
-  - component: {fileID: 893944223}
   m_Layer: 5
   m_Name: Music (1)
   m_TagString: Untagged
@@ -999,18 +998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893944219}
   m_CullTransparentMesh: 1
---- !u!114 &893944223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893944219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ede57ae5f08b042b039c1a3f9daad0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &897372965
 GameObject:
   m_ObjectHideFlags: 0
