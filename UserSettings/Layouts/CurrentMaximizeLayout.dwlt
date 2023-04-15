@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 1217
+  controlID: 3133
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,9 +306,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 125.78359, y: 21.336723, z: 16.118755}
+    m_Target: {x: 134.52994, y: 4.791751, z: 16.31663}
     speed: 2
-    m_Value: {x: 125.78359, y: 21.336723, z: 16.118755}
+    m_Value: {x: 134.52994, y: 4.791751, z: 16.31663}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -359,9 +359,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 57.54504
+    m_Target: 423648.84
     speed: 2
-    m_Value: 57.54504
+    m_Value: 411609.25
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 1218
+  controlID: 3134
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 1219
+  controlID: 3135
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -455,8 +455,8 @@ MonoBehaviour:
     y: 0
     width: 272
     height: 426.5
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -494,9 +494,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 826b0000
+      m_SelectedIDs: 88340100
       m_LastClickedID: 0
-      m_ExpandedIDs: 7ce4ffffc2e4ffff62e5ffff0ce9ffff58e9ffffa0e9ffffe8e9ffffaaeaffffeeeaffff30ebffff0afbffff42fbffffda610000
+      m_ExpandedIDs: 0ce1ffffb2e2ffff7ce4ffffc2e4ffff62e5ffff0ce9ffff58e9ffffa0e9ffffe8e9ffffaaeaffffeeeaffff30ebffff0afbffff42fbffffda61000034170100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -709,22 +709,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Clones
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Clones
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/beyza/Documents/GitHub/Gamejam_OUA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 102.49774}
-    m_SelectedIDs: b0790000
-    m_LastClickedID: 31152
-    m_ExpandedIDs: 00000000e0620000f662000000630000646c000000ca9a3b
+    scrollPos: {x: 0, y: 167.5}
+    m_SelectedIDs: f6620000
+    m_LastClickedID: 25334
+    m_ExpandedIDs: 00000000e0620000f662000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -777,8 +777,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 826b0000
-    m_LastClickedInstanceID: 27522
+    m_SelectedInstanceIDs: 88340100
+    m_LastClickedInstanceID: 78984
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000463000066620000
     m_RenameOverlay:
@@ -796,7 +796,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -856,8 +856,8 @@ MonoBehaviour:
     y: 0
     width: 340.5
     height: 720
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
