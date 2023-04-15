@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00964c9f4d9405c4fb48cb0c3232d362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: 85
+  energy: 100
   speed: 5
   _particleSystem: {fileID: 9037307383612159031}
 --- !u!114 &6379352901628493250
