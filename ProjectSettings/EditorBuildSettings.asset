@@ -6,27 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Oynanilabilir Sahneler/EntranceScene01.unity
-    guid: d9378c967c885bd4ebe68eb232af4119
+    path: Assets/Scenes/Oynanilabilir Sahneler/CreditScene.unity
+    guid: 8619ab1b507af46feb26436dcaab124a
   - enabled: 1
     path: "Assets/Scenes/Oynanilabilir Sahneler/D\u0131alogueScene.unity"
-    guid: 18baae5822dd84bdd868663eedf886bc
+    guid: 664df8085a24e4e67b0698c50643c4c7
   - enabled: 1
-    path: Assets/Scenes/Oynanilabilir Sahneler/Level1Design.unity
-    guid: 154bc2820b84f2645b03218039265fda
-  - enabled: 1
-    path: Assets/Scenes/Oynanilabilir Sahneler/Level2Design.unity
-    guid: 6c92f3a9f6152674ba32b3009a5daa2a
+    path: Assets/Scenes/Oynanilabilir Sahneler/EntranceScene01.unity
+    guid: 60d5ca13db4084606bed534d0e2a8b7f
   - enabled: 1
     path: Assets/Scenes/Oynanilabilir Sahneler/FinishDialogue.unity
-    guid: 9f98648fd2453465ea622a2ab6e197fd
+    guid: 95183e1209c744472b052bd9de60dad9
   - enabled: 1
     path: Assets/Scenes/Oynanilabilir Sahneler/FinishScene.unity
-    guid: 6f53268af1acfde41afa5ae2ce7bfab1
-  - enabled: 1
-    path: Assets/Scenes/Oynanilabilir Sahneler/CreditScene.unity
-    guid: 89d5a866dbcb1b14886de2d428fdd9a0
+    guid: 889d230bfbb49414a91529c2ec2b606f
   - enabled: 1
     path: Assets/Scenes/Oynanilabilir Sahneler/GameOverScene.unity
-    guid: e2e9bc4b714bf4c4aacd2d46af33a785
+    guid: b5b23ca608aca45f2a6f76157eac70d6
+  - enabled: 1
+    path: Assets/Scenes/Oynanilabilir Sahneler/Level1Design.unity
+    guid: 05dd982add5f34ff9b22fcdc94c5ca43
+  - enabled: 1
+    path: Assets/Scenes/Oynanilabilir Sahneler/Level2Design.unity
+    guid: 300e6f000dee049a18c7b81a68137a32
   m_configObjects: {}
